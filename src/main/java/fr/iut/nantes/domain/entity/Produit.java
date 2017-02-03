@@ -1,6 +1,6 @@
 package fr.iut.nantes.domain.entity;
 
-public class Produit {
+public class Produit{
 
 	private String id, nom, urlImage;
 	private double prix;
