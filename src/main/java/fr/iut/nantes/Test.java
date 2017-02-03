@@ -1,3 +1,4 @@
+package fr.iut.nantes;
 
 public class Test {
 
