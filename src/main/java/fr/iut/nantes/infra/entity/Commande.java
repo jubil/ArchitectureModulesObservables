@@ -1,9 +1,11 @@
-package fr.iut.nantes.domain.entity;
+package fr.iut.nantes.infra.entity;
 
 import java.util.HashMap;
 
-public class Commande {
+import fr.iut.nantes.domain.entity.Client;
+import fr.iut.nantes.domain.entity.Produit;
 
+public class Commande {
 	private String id;
 	private HashMap<Produit, Integer> listeProduitQuantite;
 	
@@ -27,5 +29,4 @@ public class Commande {
 	public Client getClient() {
 		return client;
 	}
-	
 }

@@ -1,8 +1,12 @@
 package fr.iut.nantes.application.service;
 
-import fr.iut.nantes.domain.entity.Client;
-import fr.iut.nantes.domain.entity.Commande;
-import fr.iut.nantes.domain.entity.Produit;
+import java.util.ArrayList;
+
+import fr.iut.nantes.application.service.entity.Client;
+import fr.iut.nantes.application.service.entity.Commande;
+import fr.iut.nantes.application.service.entity.Produit;
+
+
 
 public interface IConsultation {
 
@@ -26,4 +30,10 @@ public interface IConsultation {
 	 * @return Le Produit corespondant à l'id
 	 */
 	Client getClient(String id);
+	
+	/**
+	 * Récupérer la liste des produits en stock
+	 * @return Les Produits en stock
+	 */
+	ArrayList<Produit> listeProduit();
 }
