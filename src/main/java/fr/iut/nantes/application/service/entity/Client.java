@@ -1,10 +1,11 @@
-package fr.iut.nantes.domain.entity;
+package fr.iut.nantes.application.service.entity;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.iut.nantes.domain.entity.Commande;
+
 public class Client {
-	
 	private String id;
 	private String nom;
 	private List<Commande> commandes;
@@ -31,5 +32,4 @@ public class Client {
 	public List<Commande> getCommandes() {
 		return commandes;
 	}
-	
 }
