@@ -9,15 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
   <servlet>
-  	<servlet-name>I</servlet-name>
-  	<servlet-class>fr.iut.nantes.presentation.servlet.Index</servlet-class>
+    <servlet-name>I</servlet-name>
+    <servlet-class>fr.iut.nantes.presentation.servlet.Index</servlet-class>
   </servlet>
-  
   <servlet-mapping>
-  	<servlet-name>I</servlet-name>
-  	<url-pattern>/Index</url-pattern>
+    <servlet-name>I</servlet-name>
+    <url-pattern>/Index</url-pattern>
   </servlet-mapping>
-  
 </web-app>
