@@ -35,8 +35,12 @@
 							<img src="<%=ListeArticles.getArticles().get(i).getUrl() %>"/>
 							<p>Nom : <%=ListeArticles.getArticles().get(i).getNom() %></p>
 							<p>Prix : <%=ListeArticles.getArticles().get(i).getPrix() %> €</p>
+							<%if(ListeArticles.getArticles().get(i).getQte() > 0) {%>
 							<p>Quantité : <%=ListeArticles.getArticles().get(i).getQte() %></p>
 							<p><a href="#achat">Ajouter au panier</a><p>
+							<%} else {%>
+								<p><b>HORS STOCK</b></p>
+							<%} %>
 						</div>
 					</td>
 				<%if(i%3==2 || i == ListeArticles.getArticles().size()-1){ %></tr>
