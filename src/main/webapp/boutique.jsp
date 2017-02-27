@@ -12,17 +12,18 @@
 		<header>
 			<h1>Boutique en ligne</h1>
 		</header>
-		<nav>
-			<h2>Menu</h2>
-			<ul>
-				<li>Page 1</li>
-				<li>Page 2</li>
-				<li>Page 3</li>
-			</ul>
-		</nav>
-		<section>
+		<div id="nav">
+			<nav>
+				<h2><center>Menu</center></h2>
+				<ul>
+					<li><a href="">Page 1</a></li>
+					<li><a href="">Page 2</a></li>
+					<li><a href="">Page 3</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content">
 			<h2>La boutique</h2>
-			
 			<table>
 			<% 
 			
@@ -39,7 +40,7 @@
 							<p>Quantité : <%=ListeArticles.getArticles().get(i).getQte() %></p>
 							<p><a href="#achat">Ajouter au panier</a><p>
 							<%} else {%>
-								<p><b>HORS STOCK</b></p>
+								<p>HORS STOCK</p></br></br>
 							<%} %>
 						</div>
 					</td>
@@ -47,7 +48,7 @@
 				<% }} %>
 			</table>
 
-		</section>
+		</div>
 		<footer>
 			<p>Ceci est le contenu du pied de page</p>
 		</footer>

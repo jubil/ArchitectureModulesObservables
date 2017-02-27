@@ -34,6 +34,12 @@ header {
 nav {
 	margin: 0 0 1em 0;
 	text-decoration: none;
+	
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 10px;
 }
 
 nav ul {
@@ -76,7 +82,7 @@ nav ul li a:hover {
 	border-left: 1px solid gray;
 	padding: 1em;
 	text-align: center;
-	padding-top: 100px;
+	
 	padding-bottom: 100px;
 }
 
@@ -87,4 +93,9 @@ footer {
 	color: #333;
 	background-color: #ddd;
 	border-top: 1px solid gray;
+}
+
+.produit{
+	padding: 10%;
+	border: 1px solid gray;
 }
