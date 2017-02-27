@@ -7,25 +7,33 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import fr.iut.nantes.presentation.Communication;
 import fr.iut.nantes.presentation.entity.ListeArticles;
 
 public class Index extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	fr.iut.nantes.presentation.communication.Observable observablePres;
+	Communication observablePres;
 	
 	public Index(){
 		new ListeArticles();
 		
-		//Instanciation des observables
-		observablePres = new fr.iut.nantes.presentation.communication.Observable();
-	
-		//Instanciation des observers
-		fr.iut.nantes.presentation.communication.Observer observerPres = new fr.iut.nantes.presentation.communication.Observer();
-		fr.iut.nantes.application.service.communication.Observer observerApp = new fr.iut.nantes.application.service.communication.Observer();
+		//Instanciation des observeurs observables
+		observablePres = new Communication();
+		fr.iut.nantes.application.Communication observableApp = new fr.iut.nantes.application.Communication();
+		fr.iut.nantes.domain.Communication observableDom = new fr.iut.nantes.domain.Communication();
+		fr.iut.nantes.infra.Communication observableInf = new fr.iut.nantes.infra.Communication();
 		
-		//Liens entre les modules
-		observablePres.addObserver(observerApp);
+		//Liens descendants entre les modules
+		observablePres.addObserver(observableApp);
+		observableApp.addObserver(observableDom);
+		observableDom.addObserver(observableInf);
+		
+		//Liens ascendants entre les modules
+		observableInf.addObserver(observableDom);
+		observableDom.addObserver(observableApp);
+		observableApp.addObserver(observablePres);
+	
 	}
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
