@@ -7,6 +7,7 @@ public class Communication extends Observable implements Observer {
 
 	public void EnvoyerListeProduit() {
 		setChanged();
+		//TODO Attention chemin en dur
 		notifyObservers("/hometu/etudiants/g/e/E168346K/git/ArchitectureModulesObservables/src/main/webapp/xml/Produits.xml");
 	}
 	
