@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:Produits xmlns:p="http://www.example.org/SchemaProduit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/SchemaProduit SchemaProduit.xsd ">
+	<p:Produit>
+		<p:nom>Chaise blanche</p:nom>
+		<p:image>img/0.jpg</p:image>
+		<p:quantite>25</p:quantite>
+		<p:prix>24.5</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Chaise Rouge</p:nom>
+		<p:image>img/1.jpg</p:image>
+		<p:quantite>8</p:quantite>
+		<p:prix>24.5</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Table</p:nom>
+		<p:image>img/2.jpg</p:image>
+		<p:quantite>0</p:quantite>
+		<p:prix>60</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Pot de fleurs</p:nom>
+		<p:image>img/3.jpg</p:image>
+		<p:quantite>2</p:quantite>
+		<p:prix>12</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Toilettes</p:nom>
+		<p:image>img/4.jpg</p:image>
+		<p:quantite>45</p:quantite>
+		<p:prix>39.99</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Banc</p:nom>
+		<p:image>img/5.jpg</p:image>
+		<p:quantite>29</p:quantite>
+		<p:prix>300</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Entonnoir</p:nom>
+		<p:image>img/6.jpg</p:image>
+		<p:quantite>0</p:quantite>
+		<p:prix>7.99</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Dragibus</p:nom>
+		<p:image>img/7.jpg</p:image>
+		<p:quantite>92</p:quantite>
+		<p:prix>1.12</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Canapé blanc</p:nom>
+		<p:image>img/8.jpg</p:image>
+		<p:quantite>55</p:quantite>
+		<p:prix>1050</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Banc et coussins</p:nom>
+		<p:image>img/9.jpg</p:image>
+		<p:quantite>18</p:quantite>
+		<p:prix>400</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Canapé noir</p:nom>
+		<p:image>img/10.jpg</p:image>
+		<p:quantite>115</p:quantite>
+		<p:prix>1450</p:prix>
+	</p:Produit></p:Produits>

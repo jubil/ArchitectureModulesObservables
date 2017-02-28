@@ -13,10 +13,10 @@
 		<p:prix>24.5</p:prix>
 	</p:Produit>
 	<p:Produit>
-		<p:nom>Table</p:nom>
-		<p:image>img/2.jpg</p:image>
-		<p:quantite>0</p:quantite>
-		<p:prix>60</p:prix>
+		<p:nom>Canapé blanc</p:nom>
+		<p:image>img/8.jpg</p:image>
+		<p:quantite>3</p:quantite>
+		<p:prix>1000</p:prix>
 	</p:Produit>
 	<p:Produit>
 		<p:nom>Pot de fleurs</p:nom>
