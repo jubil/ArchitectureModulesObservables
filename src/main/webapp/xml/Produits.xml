@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:Produits xmlns:p="http://www.example.org/SchemaProduit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/SchemaProduit SchemaProduit.xsd ">
+	<p:Produit>
+		<p:nom>Chaise blanche</p:nom>
+		<p:image>img/0.jpg</p:image>
+		<p:quantite>25</p:quantite>
+		<p:prix>24.5</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Chaise Rouge</p:nom>
+		<p:image>img/1.jpg</p:image>
+		<p:quantite>8</p:quantite>
+		<p:prix>24.5</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Table</p:nom>
+		<p:image>img/2.jpg</p:image>
+		<p:quantite>0</p:quantite>
+		<p:prix>60</p:prix>
+	</p:Produit>
+	<p:Produit>
+		<p:nom>Pot de fleurs</p:nom>
+		<p:image>img/3.jpg</p:image>
+		<p:quantite>2</p:quantite>
+		<p:prix>12</p:prix>
+	</p:Produit></p:Produits>

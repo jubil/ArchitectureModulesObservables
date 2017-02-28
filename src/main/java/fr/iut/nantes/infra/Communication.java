@@ -7,7 +7,7 @@ public class Communication extends Observable implements Observer {
 
 	public void EnvoyerListeProduit() {
 		setChanged();
-		notifyObservers("Ceci a été généré par l'infra");
+		notifyObservers("/hometu/etudiants/g/e/E168346K/git/ArchitectureModulesObservables/src/main/webapp/xml/Produits.xml");
 	}
 	
 	public void update(Observable o, Object arg) {

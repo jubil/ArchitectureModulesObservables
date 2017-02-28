@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.example.org/SchemaProduit" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org/SchemaProduit">
+
+    <xsd:complexType name="Produit">
+    	<xsd:sequence>
+    		<xsd:element name="nom" type="xsd:string" maxOccurs="1" minOccurs="1"></xsd:element>
+    		<xsd:element name="image" type="xsd:string" maxOccurs="1" minOccurs="1"></xsd:element>
+    		<xsd:element name="quantite" type="xsd:int" maxOccurs="1" minOccurs="1"></xsd:element>
+    		<xsd:element name="prix" type="xsd:double" maxOccurs="1" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Produits" type="ListeProduit"></xsd:element>
+    
+    <xsd:complexType name="ListeProduit">
+    	<xsd:sequence>
+    		<xsd:element name="Produit" type="Produit" maxOccurs="unbounded" minOccurs="0"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
