@@ -11,7 +11,6 @@
 	<body>
 		<header>
 			<h1>Boutique en ligne</h1>
-			<audio src="mp3/music.mp3" autoplay/>
 		</header>
 		<div id="nav">
 			<nav>
