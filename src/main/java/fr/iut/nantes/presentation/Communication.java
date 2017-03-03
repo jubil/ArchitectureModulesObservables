@@ -10,6 +10,7 @@ public class Communication extends Observable implements Observer {
 	boolean estAJour = false;
 
 	public void DemanderListeProduit() {
+		System.out.println("Presentation : Envoie d'une demande pour récupérer les Produits");
 		setChanged();
 		notifyObservers("DemanderListeProduit");
 	}
@@ -17,6 +18,7 @@ public class Communication extends Observable implements Observer {
 	public void update(Observable o, Object arg) {
 		if (o instanceof fr.iut.nantes.application.Communication) {
 			if(!"DemanderListeProduit".equals(arg)){
+				System.out.println("Présentation <-- Application");
 				ListeArticles.genListe(""+arg);
 			}
 		}
